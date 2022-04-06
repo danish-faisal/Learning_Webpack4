@@ -1,0 +1,28 @@
+{
+  "name": "learning_webpack4",
+  "version": "1.0.0",
+  "description": "Learning all about webpack 4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpack",
+    "preprocessing",
+    "react"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danish-faisal/Learning_Webpack4.git"
+  },
+  "author": "Danish Faisal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danish-faisal/Learning_Webpack4/issues"
+  },
+  "homepage": "https://github.com/danish-faisal/Learning_Webpack4#readme",
+  "devDependencies": {
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1"
+  }
+}
