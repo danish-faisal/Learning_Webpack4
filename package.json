@@ -6,7 +6,8 @@
   "scripts": {
     "build_one": "webpack",
     "build_two": "./node_modules/.bin/webpack",
-    "build_with_watch": "./node_modules/.bin/webpack -w"
+    "build_with_watch": "./node_modules/.bin/webpack -w",
+    "start:dev": "./node_modules/.bin/webpack-dev-server"
   },
   "keywords": [
     "webpack",
@@ -27,12 +28,14 @@
     "@babel/core": "^7.17.8",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
+    "@webpack-cli/serve": "^1.6.1",
     "babel-loader": "^8.2.4",
     "css-loader": "^5.2.7",
     "style-loader": "^2.0.0",
     "url-loader": "^4.1.1",
     "webpack": "^4.28.4",
-    "webpack-cli": "^3.2.1"
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
     "jquery": "^3.6.0",
