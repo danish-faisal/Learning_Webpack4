@@ -1,4 +1,3 @@
-const { dirname } = require("path");
 const path = require("path");
 
 module.exports = {
@@ -6,6 +5,19 @@ module.exports = {
     output: {
         filename: "main.js",
         path: path.resolve(__dirname, "dist")
+    },
+    module: {
+        rules: [
+            {
+                module: {
+                    test: /\.js$/,
+                    exclude: /(node_modules)/,
+                    use: {
+                        loader: "babel-loader"
+                    }
+                }
+            }
+        ]
     }
 }
 
