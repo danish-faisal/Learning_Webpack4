@@ -11,6 +11,11 @@ module.exports = {
         filename: "[name].bundle.js",
         path: path.resolve(__dirname, "dist")
     },
+    optimization: {
+        splitChunks: {
+            chunks: "all"
+        }
+    },
     devServer: {
         contentBase: path.join(__dirname, "dist"),
         port: 9000
