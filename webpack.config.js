@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
 module.exports = {
     entry: "./src/index.js",
@@ -15,7 +16,8 @@ module.exports = {
     optimization: {
         splitChunks: {
             chunks: "all"
-        }
+        },
+        minimizer: [new UglifyJsPlugin()]
     },
     plugins: [new HtmlWebpackPlugin()],
     devServer: {
@@ -54,3 +56,11 @@ module.exports = {
 // npx webpack -> will look for 'webpack.config.js' config file and generate bundle accordingly
 
 // to use custom config file name -> "npx webpack --config my.custom.webpack.config.js"
+
+// HtmlWebpackPlugin to create only one bundled .html & .js file
+
+// Optimization/Splitchunks -> to have common code in multipe js files moved to one vendor file
+
+// different loaders -> to load dependencies only when & which are required
+
+// Uglifyjs Webpack plugin -> to get the most optimized production build
