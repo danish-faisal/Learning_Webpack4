@@ -1,6 +1,9 @@
-const $ = require("jquery");
+import React from "react";
+import { render } from "react-dom";
 
-$("#target").html("Hello World!");
+const Greeting = () => <h1>Hello from React</h1>
 
-// to run webpack -> ./node_modules/.bin/webpack (or) just "webpack" if installed globally
-// or run "npx webpack" -> will create the main.js file in /dist
+render(
+    <Greeting />,
+    document.getElementById("target")
+);
